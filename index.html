@@ -5,23 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html forms</title>
+    <style>
+        body{
+            background-color:#f7d794;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>html forms</h1>
+    <h1 style="text-align: center; background-color: aquamarine;">STUDENT REGISTRARION</h1>
+
     <fieldset>
         <legend>form1</legend>
-        <input  style="background-color: aquamarine; color: black; border-radius: 10px;padding: 10px;"type=" text" placeholder="username">
-        <input type="button" value="login">
-        <input type="checkbox">
-        <input type="color">
-        <input type="date">
+        <label for="username">Username: </label>
+        <input  style="background-color:aquamarine; black; border-radius: 10px;padding: 10px;"type=" text" placeholder="username">
+        <br>
+        <br>
+        <label for="password">password :</label>
+        <input style="background-color: aquamarine; color: black; padding: 10px; border-radius: 10px;" type="password" placeholder="password">
+        <br>
+        <br>
+         <input style="background-color: darkgray;" type="button" value="login">
+       
     </fieldset>
 
     <br>
     <br>
     <fieldset>
         <legend>form2</legend>
+        <label for="birthdate">Date Of Birth:</label>
+         <input style="background-color: aquamarine;"  type="date">
+        
+        <input type="checkbox">
+        
+       
         <input type="datetime-local">
         <br>
         <br>
@@ -31,7 +48,13 @@
         <input type="month">
         <br>
         <br>
-        <input style="background-color: aquamarine; color: black; padding: 10px; border-radius: 10px;" type="password" placeholder="password">
+        <input  list="names" placeholder="search names">
+        <datalist id="names">
+            <option value="saman"></option>
+            <option value="kamal"></option>
+            <option value="avishka"></option>
+        </datalist>
+        
         <input type="tel">
         <br>
         <br>
@@ -46,6 +69,12 @@
         <br>
         <input type="search">
         <textarea name="name" id="id"></textarea>
+        <br>
+        <br>
+        <select name="" id="">
+            <option value="1">male</option>
+            <option value="2">female</option>
+        </select>
         <br>
         <br>
         <input type="submit">
